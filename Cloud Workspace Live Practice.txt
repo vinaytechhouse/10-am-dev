@@ -1,0 +1,149 @@
+Power BI Cloud:  The cloud area where we keep reports, dashboards, dataflows etc, share, and manage.
+Workspace: The area where keep our work [reports, dashboards, dataflows etc.]
+Appspace: Sharing area [others will access in a single area]
+Deployment: Moving objects from one environment to another environment [Dev->Test->Prod etc.]
+==========================================================================
+
+
+Step 1: Go to a browser (google chrome or internet explorer), specify app.powerbi.com
+
+		Enter the below credentials
+		User name: vinaytech_0304@vinaytechhouse.com
+		Password: vinaytech@2024
+Step 2:  Go to left handside pane, click on workspaces, Create workspace
+
+		Name: wp_10am_vinay
+		Description: Having reports
+		Advanced: Scroll down->Premium Per User
+		Save
+Step 3:  Go to your workspace (wp_10am_vinay)
+		Upload-> Browse the reports you have created
+		
+		Q: What did you understand from the reports uploaded
+			
+Step 4: Download from Github link, and upload Case Study 3 report
+
+		Open Case Study 3 report [clicking on Report type]
+			Navigate Yearly Page by slicing and other filterings. Also go to table visual, any year cell, hold it->drill 			              through-> monthly page. Ensure it is going to monthly page.
+
+		Click on back button in month ly page to go back to yearly page.			
+		
+
+Step 5: ***Create Appspace(Sharing area) from workspace ****
+		Go to the workspace->Click on Create App->
+		Setup Tab:
+				Name:
+				Description: Mandatory
+				App logo: if you hvae any image
+				App theme color: Your favourite
+				Advanced:
+
+						Navigation Pane: Expand navigation pane by default
+						Global app setting: Install the app automatically
+
+				Click Next to Add Content
+
+		Add Content Tab:
+
+					Case Study 2: Report
+					Case Study 3: Report
+		Audience Tab:
+
+					Right handside -> Add specific users ot group-> vinaytech_1803@vinaytechhouse.com
+					Publish App.
+
+Step 5:   ** Connecting as a customer to view the content in web and mobile*********
+		
+		============
+		Web Operations
+		============
+
+		Open a different browser than the previous, connect to app.powerbi.com using the below credentials
+
+			User name: vinaytech_1803@vinaytechhouse.com
+			Password: vinaytech@2024
+
+		Go to left handside pane-> Apps->identify your app ->click on it
+			Go to the Case study 3 report and navigate.
+			Ensure drill through from yearly to monthly working well.
+
+		============
+		Mobile  Operations
+		============
+		Open your mobile or tab, download Power BI App, Open the app and connect with the below credentials.
+
+			User name: vinaytech_1803@vinaytechhouse.com
+			Password: vinaytech@2024
+		Go to the recent section, click on the app created, browse case study 3 to verify slicing and drill through.
+
+
+		
+Step 6:  ****Deployment Mechanism at Cloud******
+
+		Go to your workspace-> Click on Create Deployment Pipeline->
+		
+						Name:
+						Desc:
+						Next-> Verify statges [Add or remove based on project requirement]->Next
+						Assign workspace to Development -> Next
+
+						
+		Go to the pipeline, Development-> Click Deploy (if you want to remove reports, go to report and delete)->
+		It will move Test environment by creating a test workspace.
+
+
+		Go to the pipeline, Test-> Click Deploy (if you want to remove reports, go to report and delete)->
+		It will move Production environment by creating a production workspace.
+
+Step 6:
+
+		Go to Development workspace-> Add one new report
+
+Step 7:
+		Go to Pipeline-> click on compare between Development and Test-> Select the reports not loaded-> Deploy
+		Only the report (above added) moved to Test environment.
+
+		Go to Pipeline-> click on compare between  Test and Production-> Select the reports not loaded-> Deploy
+		Only the report (above added) moved to Production environment.
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
