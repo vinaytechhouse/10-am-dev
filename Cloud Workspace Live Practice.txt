@@ -1,8 +1,12 @@
+Live practice session held on 15_04_2024
+
+
 Power BI Cloud:  The cloud area where we keep reports, dashboards, dataflows etc, share, and manage.
 Workspace: The area where keep our work [reports, dashboards, dataflows etc.]
-Appspace: Sharing area [others will access in a single area]
+Appspace: Sharing area[others will access in a single area]
 Deployment: Moving objects from one environment to another environment [Dev->Test->Prod etc.]
 ==========================================================================
+
 
 
 Step 1: Go to a browser (google chrome or internet explorer), specify app.powerbi.com
